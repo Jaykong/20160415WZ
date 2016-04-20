@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26h-UZ-GNQ">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiu-LD-GAz">
+                                        <rect key="frame" x="0.0" y="0.0" width="1680" height="580"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="kgH-hB-Y4R">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="tAe-Sv-k49">
+                                                <rect key="frame" x="560" y="0.0" width="560" height="580"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image3" translatesAutoresizingMaskIntoConstraints="NO" id="kgJ-I9-I2M">
+                                                <rect key="frame" x="1120" y="0.0" width="560" height="580"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="tAe-Sv-k49" firstAttribute="height" secondItem="kgH-hB-Y4R" secondAttribute="height" id="5Dj-gk-14W"/>
+                                            <constraint firstItem="tAe-Sv-k49" firstAttribute="leading" secondItem="kgH-hB-Y4R" secondAttribute="trailing" id="93Y-Zz-UUd"/>
+                                            <constraint firstAttribute="bottom" secondItem="kgJ-I9-I2M" secondAttribute="bottom" id="Hxo-Fr-fDs"/>
+                                            <constraint firstAttribute="trailing" secondItem="kgJ-I9-I2M" secondAttribute="trailing" id="Ida-WA-1pM"/>
+                                            <constraint firstAttribute="bottom" secondItem="kgH-hB-Y4R" secondAttribute="bottom" id="JHv-cv-QmH"/>
+                                            <constraint firstItem="tAe-Sv-k49" firstAttribute="width" secondItem="kgH-hB-Y4R" secondAttribute="width" id="N1K-wN-IS5"/>
+                                            <constraint firstAttribute="bottom" secondItem="tAe-Sv-k49" secondAttribute="bottom" id="NXT-1Z-rMJ"/>
+                                            <constraint firstItem="kgH-hB-Y4R" firstAttribute="top" secondItem="Oiu-LD-GAz" secondAttribute="top" id="Pat-9n-xPe"/>
+                                            <constraint firstItem="kgH-hB-Y4R" firstAttribute="leading" secondItem="Oiu-LD-GAz" secondAttribute="leading" id="VpM-Yl-lKp"/>
+                                            <constraint firstItem="kgJ-I9-I2M" firstAttribute="width" secondItem="kgH-hB-Y4R" secondAttribute="width" id="W1x-9t-ajS"/>
+                                            <constraint firstItem="kgJ-I9-I2M" firstAttribute="top" secondItem="Oiu-LD-GAz" secondAttribute="top" id="YhP-Ej-5rp"/>
+                                            <constraint firstItem="kgJ-I9-I2M" firstAttribute="height" secondItem="kgH-hB-Y4R" secondAttribute="height" id="ZMm-U6-HC0"/>
+                                            <constraint firstItem="kgJ-I9-I2M" firstAttribute="leading" secondItem="tAe-Sv-k49" secondAttribute="trailing" id="aw1-ED-0RR"/>
+                                            <constraint firstItem="tAe-Sv-k49" firstAttribute="top" secondItem="Oiu-LD-GAz" secondAttribute="top" id="e0P-fa-kHn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oiu-LD-GAz" firstAttribute="height" secondItem="26h-UZ-GNQ" secondAttribute="height" id="1QL-qj-ju3"/>
+                                    <constraint firstItem="Oiu-LD-GAz" firstAttribute="width" secondItem="26h-UZ-GNQ" secondAttribute="width" multiplier="3" id="In7-Ww-KZZ"/>
+                                    <constraint firstItem="Oiu-LD-GAz" firstAttribute="leading" secondItem="26h-UZ-GNQ" secondAttribute="leading" id="Pth-Ad-bwO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oiu-LD-GAz" secondAttribute="bottom" id="V0Q-8c-FZl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oiu-LD-GAz" secondAttribute="trailing" id="bOx-dM-jQL"/>
+                                    <constraint firstItem="Oiu-LD-GAz" firstAttribute="top" secondItem="26h-UZ-GNQ" secondAttribute="top" id="dLU-DX-dbb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="26h-UZ-GNQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3KY-fH-R9k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="26h-UZ-GNQ" secondAttribute="bottom" id="NjM-0c-HwL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="26h-UZ-GNQ" secondAttribute="trailing" id="da5-4J-I2E"/>
+                            <constraint firstItem="26h-UZ-GNQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="idr-Mp-O1m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image1" width="213" height="341"/>
+        <image name="Image2" width="213" height="341"/>
+        <image name="Image3" width="213" height="341"/>
+    </resources>
+</document>

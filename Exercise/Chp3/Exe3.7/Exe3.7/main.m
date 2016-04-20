@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-    //---- @interface ----
-    @interface XYpoint: NSObject
+//---- @interface ----
+@interface XYpoint: NSObject
     
     //-(void) print;
     -(void) setX: (int) x;
@@ -17,37 +17,37 @@
     -(int) getX;
     -(int) getY;
 
-    @end
+@end
 
-    //---- @implementation ----
+//---- @implementation ----
 
-    @implementation XYpoint
-    {
-    int X;
-    int Y;
-    }
+@implementation XYpoint
+{
+    int X;//实例变量
+    int Y;//
+}
 
-    //-(void) print
+//-(void) print
     //{
     //    NSLog(@"(%i,%i)", X, Y);
     //}
 
-    -(void) setX: (int) x
+-(void) setX: (int) x
     {
         X=x;
     }
 
-    -(void) setY:(int)y
+-(void) setY:(int) y
     {
         Y=y;
     }
 
-    -(int) getX
+-(int) getX
     {
         return X;
     }
 
-    -(int) getY
+-(int) getY
     {
         return Y;
     }
