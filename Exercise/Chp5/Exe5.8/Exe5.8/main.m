@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
         {
             m = 0;
             printf("Please input your number\n");
-            scanf("%i", &number);
+            scanf(" %i", &number);
             
             while(number != 0)
             {
